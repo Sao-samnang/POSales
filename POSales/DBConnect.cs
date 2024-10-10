@@ -17,7 +17,7 @@ namespace POSales
         private string con;
         public string myConnection()
         {
-            con = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=MdemyPOS;Integrated Security=True;Connect Timeout=30;";
+            con = @"Data Source=SAO-SAMNANG\SQLEXPRESS;Initial Catalog=MdemyDBPOS;Integrated Security=True;";
             return con;
         }
 

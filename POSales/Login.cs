@@ -25,11 +25,14 @@ namespace POSales
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
             txtName.Focus();
-            label2.Parent = pictureBox2;
-            label3.Parent = pictureBox2;
-        }
+            panel_login.Parent = pictureBox1;
+            panel_login.BackColor = Color.FromArgb(90,0,0,0);
+            label1.Parent = panel_login;
+            //txtName.Parent = panel_login;
+            //txtPass.Parent = panel_login;
 
-        private void picClose_Click(object sender, EventArgs e)
+        }
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -37,7 +40,15 @@ namespace POSales
             }
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar==13)
+            {
+                btnLogin.PerformClick();
+            }
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             string _username = "", _name = "", _role = "";
             try
@@ -49,7 +60,7 @@ namespace POSales
                 cm.Parameters.AddWithValue("@password", txtPass.Text);
                 dr = cm.ExecuteReader();
                 dr.Read();
-                if(dr.HasRows)
+                if (dr.HasRows)
                 {
                     found = true;
                     _username = dr["username"].ToString();
@@ -60,20 +71,20 @@ namespace POSales
 
                 }
                 else
-                { 
-                    found = false; 
+                {
+                    found = false;
                 }
                 dr.Close();
                 cn.Close();
 
-                if(found)
+                if (found)
                 {
-                    if(!_isactivate)
+                    if (!_isactivate)
                     {
                         MessageBox.Show("Account is deactivate. Unable to login", "Inactive Account", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-                    if(_role=="Cashier")
+                    if (_role == "Cashier")
                     {
                         MessageBox.Show("Welcome " + _name + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         txtName.Clear();
@@ -93,7 +104,7 @@ namespace POSales
                         MainForm main = new MainForm();
                         main.lblUsername.Text = _username;
                         main.lblName.Text = _name;
-                        main._pass = _pass;                        
+                        main._pass = _pass;
                         main.ShowDialog();
                     }
                 }
@@ -107,21 +118,14 @@ namespace POSales
                 cn.Close();
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnCancel_Click_1(object sender, EventArgs e)
         {
             if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
-            }
-        }
-
-        private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if(e.KeyChar==13)
-            {
-                btnLogin.PerformClick();
             }
         }
     }

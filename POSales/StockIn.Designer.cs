@@ -30,8 +30,8 @@ namespace POSales
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockIn));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
@@ -93,9 +93,10 @@ namespace POSales
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 504);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 57);
@@ -116,12 +117,14 @@ namespace POSales
             // 
             // metroTabControl1
             // 
+            this.metroTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.metroTabControl1.Controls.Add(this.tabPage1);
             this.metroTabControl1.Controls.Add(this.tabPage2);
-            this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(984, 504);
             this.metroTabControl1.TabIndex = 4;
             this.metroTabControl1.UseSelectable = true;
@@ -156,16 +159,18 @@ namespace POSales
             // dgvStockIn
             // 
             this.dgvStockIn.AllowUserToAddRows = false;
+            this.dgvStockIn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvStockIn.BackgroundColor = System.Drawing.Color.White;
             this.dgvStockIn.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStockIn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStockIn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStockIn.ColumnHeadersHeight = 30;
             this.dgvStockIn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvStockIn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -179,7 +184,6 @@ namespace POSales
             this.Column7,
             this.Column8,
             this.Delete});
-            this.dgvStockIn.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgvStockIn.EnableHeadersVisualStyles = false;
             this.dgvStockIn.Location = new System.Drawing.Point(0, 158);
             this.dgvStockIn.Name = "dgvStockIn";
@@ -257,6 +261,7 @@ namespace POSales
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.Controls.Add(this.txtAddress);
             this.panel2.Controls.Add(this.txtConPerson);
             this.panel2.Controls.Add(this.cbSupplier);
@@ -272,7 +277,6 @@ namespace POSales
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(976, 158);
@@ -280,6 +284,7 @@ namespace POSales
             // 
             // txtAddress
             // 
+            this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtAddress.Location = new System.Drawing.Point(617, 92);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(351, 26);
@@ -287,6 +292,7 @@ namespace POSales
             // 
             // txtConPerson
             // 
+            this.txtConPerson.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtConPerson.Location = new System.Drawing.Point(617, 52);
             this.txtConPerson.Name = "txtConPerson";
             this.txtConPerson.Size = new System.Drawing.Size(351, 26);
@@ -294,6 +300,7 @@ namespace POSales
             // 
             // cbSupplier
             // 
+            this.cbSupplier.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbSupplier.FormattingEnabled = true;
             this.cbSupplier.Location = new System.Drawing.Point(617, 11);
             this.cbSupplier.Name = "cbSupplier";
@@ -304,6 +311,7 @@ namespace POSales
             // 
             // LinProduct
             // 
+            this.LinProduct.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.LinProduct.AutoSize = true;
             this.LinProduct.LinkColor = System.Drawing.Color.DimGray;
             this.LinProduct.Location = new System.Drawing.Point(139, 127);
@@ -316,6 +324,7 @@ namespace POSales
             // 
             // LinGenerate
             // 
+            this.LinGenerate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.LinGenerate.AutoSize = true;
             this.LinGenerate.LinkColor = System.Drawing.Color.DimGray;
             this.LinGenerate.Location = new System.Drawing.Point(322, 15);
@@ -328,6 +337,7 @@ namespace POSales
             // 
             // dtStockIn
             // 
+            this.dtStockIn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtStockIn.Location = new System.Drawing.Point(143, 90);
             this.dtStockIn.Name = "dtStockIn";
             this.dtStockIn.Size = new System.Drawing.Size(278, 26);
@@ -335,6 +345,7 @@ namespace POSales
             // 
             // txtStockInBy
             // 
+            this.txtStockInBy.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtStockInBy.Location = new System.Drawing.Point(143, 52);
             this.txtStockInBy.Name = "txtStockInBy";
             this.txtStockInBy.Size = new System.Drawing.Size(278, 26);
@@ -342,6 +353,7 @@ namespace POSales
             // 
             // txtRefNo
             // 
+            this.txtRefNo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtRefNo.Location = new System.Drawing.Point(143, 11);
             this.txtRefNo.Name = "txtRefNo";
             this.txtRefNo.Size = new System.Drawing.Size(165, 26);
@@ -349,6 +361,7 @@ namespace POSales
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(8, 90);
             this.label4.Name = "label4";
@@ -358,6 +371,7 @@ namespace POSales
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(8, 52);
             this.label3.Name = "label3";
@@ -367,6 +381,7 @@ namespace POSales
             // 
             // lblId
             // 
+            this.lblId.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblId.AutoSize = true;
             this.lblId.Location = new System.Drawing.Point(463, 127);
             this.lblId.Name = "lblId";
@@ -377,6 +392,7 @@ namespace POSales
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(463, 90);
             this.label7.Name = "label7";
@@ -386,6 +402,7 @@ namespace POSales
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(463, 52);
             this.label6.Name = "label6";
@@ -395,6 +412,7 @@ namespace POSales
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(463, 17);
             this.label5.Name = "label5";
@@ -404,6 +422,7 @@ namespace POSales
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 14);
             this.label2.Name = "label2";
@@ -425,16 +444,19 @@ namespace POSales
             // dgvInStockHistory
             // 
             this.dgvInStockHistory.AllowUserToAddRows = false;
+            this.dgvInStockHistory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInStockHistory.BackgroundColor = System.Drawing.Color.White;
             this.dgvInStockHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInStockHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInStockHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvInStockHistory.ColumnHeadersHeight = 30;
             this.dgvInStockHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvInStockHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -447,7 +469,6 @@ namespace POSales
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
-            this.dgvInStockHistory.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgvInStockHistory.EnableHeadersVisualStyles = false;
             this.dgvInStockHistory.Location = new System.Drawing.Point(0, 72);
             this.dgvInStockHistory.Name = "dgvInStockHistory";
@@ -516,12 +537,12 @@ namespace POSales
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.Controls.Add(this.btnLoad);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.dtTo);
             this.panel3.Controls.Add(this.dtFrom);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(976, 72);

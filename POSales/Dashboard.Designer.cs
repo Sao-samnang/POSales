@@ -70,11 +70,12 @@ namespace POSales
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(968, 142);
@@ -82,6 +83,7 @@ namespace POSales
             // 
             // panel8
             // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel8.BackColor = System.Drawing.Color.Teal;
             this.panel8.Controls.Add(this.lblStockOnHand);
             this.panel8.Controls.Add(this.label10);
@@ -143,6 +145,7 @@ namespace POSales
             // 
             // panel6
             // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel6.BackColor = System.Drawing.Color.Firebrick;
             this.panel6.Controls.Add(this.lblCriticalItems);
             this.panel6.Controls.Add(this.label7);
@@ -204,6 +207,7 @@ namespace POSales
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.lblTotalProduct);
             this.panel4.Controls.Add(this.label4);
@@ -265,6 +269,7 @@ namespace POSales
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.ForestGreen;
             this.panel2.Controls.Add(this.lblDalySale);
             this.panel2.Controls.Add(this.label2);
@@ -326,6 +331,9 @@ namespace POSales
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2PictureBox1.Image = global::POSales.Properties.Resources._2148028029;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 148);

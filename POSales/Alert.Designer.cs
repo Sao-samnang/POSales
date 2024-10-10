@@ -46,6 +46,7 @@ namespace POSales
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.lblPcode);
             this.panel1.Controls.Add(this.lblMsg);
             this.panel1.Controls.Add(this.btnClose);

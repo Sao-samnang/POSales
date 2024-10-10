@@ -423,6 +423,7 @@
     <Content Include="MetroFramework.txt" />
     <None Include="Resources\2148028029.jpg" />
     <None Include="Resources\10791413.jpg" />
+    <None Include="Resources\Picture1.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

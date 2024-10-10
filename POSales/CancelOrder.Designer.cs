@@ -69,7 +69,7 @@ namespace POSales
             // 
             // panel1
             // 
-            panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             panel1.Controls.Add(this.picClose);
             panel1.Controls.Add(this.label1);
             panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -334,7 +334,7 @@ namespace POSales
             // btnCOrder
             // 
             this.btnCOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnCOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnCOrder.FlatAppearance.BorderSize = 0;
             this.btnCOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCOrder.ForeColor = System.Drawing.Color.White;

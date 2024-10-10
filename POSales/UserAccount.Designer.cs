@@ -30,7 +30,7 @@ namespace POSales
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserAccount));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
@@ -84,9 +84,10 @@ namespace POSales
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 481);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 80);
@@ -107,12 +108,15 @@ namespace POSales
             // 
             // metroTabControl1
             // 
+            this.metroTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Location = new System.Drawing.Point(32, 12);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(928, 452);
             this.metroTabControl1.TabIndex = 4;
             this.metroTabControl1.UseSelectable = true;
@@ -134,7 +138,7 @@ namespace POSales
             this.metroTabPage1.Controls.Add(this.label2);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 3;
+            this.metroTabPage1.HorizontalScrollbarSize = 1;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(920, 410);
@@ -142,11 +146,11 @@ namespace POSales
             this.metroTabPage1.Text = "Create Account";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 3;
+            this.metroTabPage1.VerticalScrollbarSize = 1;
             // 
             // btnAccSave
             // 
-            this.btnAccSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAccSave.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAccSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.btnAccSave.FlatAppearance.BorderSize = 0;
             this.btnAccSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -161,7 +165,7 @@ namespace POSales
             // 
             // btnAccCancel
             // 
-            this.btnAccCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAccCancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAccCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAccCancel.FlatAppearance.BorderSize = 0;
             this.btnAccCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -176,6 +180,7 @@ namespace POSales
             // 
             // txtName
             // 
+            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtName.Location = new System.Drawing.Point(265, 273);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(527, 26);
@@ -183,6 +188,7 @@ namespace POSales
             // 
             // cbRole
             // 
+            this.cbRole.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbRole.FormattingEnabled = true;
             this.cbRole.Items.AddRange(new object[] {
             "Administrator",
@@ -194,6 +200,7 @@ namespace POSales
             // 
             // txtRePass
             // 
+            this.txtRePass.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtRePass.Location = new System.Drawing.Point(265, 169);
             this.txtRePass.Name = "txtRePass";
             this.txtRePass.Size = new System.Drawing.Size(527, 26);
@@ -202,6 +209,7 @@ namespace POSales
             // 
             // txtPass
             // 
+            this.txtPass.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPass.Location = new System.Drawing.Point(265, 118);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(527, 26);
@@ -210,6 +218,7 @@ namespace POSales
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtUsername.Location = new System.Drawing.Point(265, 67);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(527, 26);
@@ -217,6 +226,7 @@ namespace POSales
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(95, 274);
             this.label6.Name = "label6";
@@ -226,6 +236,7 @@ namespace POSales
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(95, 223);
             this.label5.Name = "label5";
@@ -235,6 +246,7 @@ namespace POSales
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(95, 172);
             this.label4.Name = "label4";
@@ -244,6 +256,7 @@ namespace POSales
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(95, 121);
             this.label3.Name = "label3";
@@ -253,6 +266,7 @@ namespace POSales
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(95, 70);
             this.label2.Name = "label2";
@@ -275,7 +289,7 @@ namespace POSales
             this.metroTabPage2.Controls.Add(this.label8);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 3;
+            this.metroTabPage2.HorizontalScrollbarSize = 1;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(920, 410);
@@ -283,10 +297,11 @@ namespace POSales
             this.metroTabPage2.Text = "Change Password";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 3;
+            this.metroTabPage2.VerticalScrollbarSize = 1;
             // 
             // lblUsername
             // 
+            this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(176, 73);
@@ -297,6 +312,7 @@ namespace POSales
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(114, 41);
             this.pictureBox1.Name = "pictureBox1";
@@ -306,7 +322,7 @@ namespace POSales
             // 
             // btnPassSave
             // 
-            this.btnPassSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPassSave.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnPassSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.btnPassSave.FlatAppearance.BorderSize = 0;
             this.btnPassSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -321,7 +337,7 @@ namespace POSales
             // 
             // btnPassCancel
             // 
-            this.btnPassCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPassCancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnPassCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnPassCancel.FlatAppearance.BorderSize = 0;
             this.btnPassCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -336,6 +352,7 @@ namespace POSales
             // 
             // txtRePass2
             // 
+            this.txtRePass2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtRePass2.Location = new System.Drawing.Point(280, 234);
             this.txtRePass2.Name = "txtRePass2";
             this.txtRePass2.Size = new System.Drawing.Size(527, 26);
@@ -344,6 +361,7 @@ namespace POSales
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(110, 237);
             this.label10.Name = "label10";
@@ -353,6 +371,7 @@ namespace POSales
             // 
             // txtNPass
             // 
+            this.txtNPass.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNPass.Location = new System.Drawing.Point(280, 176);
             this.txtNPass.Name = "txtNPass";
             this.txtNPass.Size = new System.Drawing.Size(527, 26);
@@ -361,6 +380,7 @@ namespace POSales
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(110, 179);
             this.label9.Name = "label9";
@@ -370,6 +390,7 @@ namespace POSales
             // 
             // txtCurPass
             // 
+            this.txtCurPass.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCurPass.Location = new System.Drawing.Point(280, 121);
             this.txtCurPass.Name = "txtCurPass";
             this.txtCurPass.Size = new System.Drawing.Size(527, 26);
@@ -378,6 +399,7 @@ namespace POSales
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(110, 124);
             this.label8.Name = "label8";
@@ -393,7 +415,7 @@ namespace POSales
             this.metroTabPage3.Controls.Add(this.dgvUser);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 3;
+            this.metroTabPage3.HorizontalScrollbarSize = 1;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
             this.metroTabPage3.Size = new System.Drawing.Size(920, 410);
@@ -401,10 +423,12 @@ namespace POSales
             this.metroTabPage3.Text = "Activate/ UnActivate Account";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 3;
+            this.metroTabPage3.VerticalScrollbarSize = 1;
             // 
             // gbUser
             // 
+            this.gbUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbUser.BackColor = System.Drawing.Color.White;
             this.gbUser.Controls.Add(this.pictureBox2);
             this.gbUser.Controls.Add(this.lblAccNote);
@@ -479,18 +503,19 @@ namespace POSales
             // dgvUser
             // 
             this.dgvUser.AllowUserToAddRows = false;
-            this.dgvUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvUser.BackgroundColor = System.Drawing.Color.White;
             this.dgvUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUser.ColumnHeadersHeight = 30;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
