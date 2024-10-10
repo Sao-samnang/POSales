@@ -122,7 +122,7 @@ namespace POSales
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(68, 37);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 20);
+            this.label11.Size = new System.Drawing.Size(150, 22);
             this.label11.TabIndex = 1;
             this.label11.Text = "Stock On Hand";
             // 
@@ -184,7 +184,7 @@ namespace POSales
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(68, 37);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 20);
+            this.label8.Size = new System.Drawing.Size(125, 22);
             this.label8.TabIndex = 1;
             this.label8.Text = "Critical Items";
             // 
@@ -246,7 +246,7 @@ namespace POSales
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(68, 37);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 20);
+            this.label5.Size = new System.Drawing.Size(131, 22);
             this.label5.TabIndex = 1;
             this.label5.Text = "Total Product";
             // 
@@ -308,7 +308,7 @@ namespace POSales
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(68, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 20);
+            this.label1.Size = new System.Drawing.Size(103, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Daily Sales";
             // 
@@ -334,7 +334,7 @@ namespace POSales
             this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2PictureBox1.Image = global::POSales.Properties.Resources._2148028029;
+            this.guna2PictureBox1.Image = global::POSales.Properties.Resources.Plaap_Design_Interior_Bread_Boutique_1;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 148);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -345,7 +345,7 @@ namespace POSales
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(968, 582);
